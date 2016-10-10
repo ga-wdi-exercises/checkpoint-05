@@ -1,0 +1,23 @@
+<h2> All Cars</h2>
+
+
+<pre>
+
+  <%=sprintf('%-10s %10s %10s %15s  %10s','Year','Make','Model','Transmission','Color')%>
+  <% @cars.each do |car| %>
+    <div id= "delpair">
+<a href= "/car/<%=car.id%> " >
+   <%= sprintf('%-10d %10s %10s %10s  %10s', car.year, car.make, car.model, car.transmission, car.color) %> </a>
+   <form action="/car/<%= car.id %>" method="post">
+     <input type="hidden" name="_method" value="delete">
+     <input class="button-delete" type="submit" value="Delete!">
+   </form>
+   <form action="/car/<%= car.id %>" method="get">
+     <input class="button-showcar" type="submit" value="Show Car>
+   </form>
+
+ </div>
+  <% end %>
+</pre>
+
+  <button id="addbut" type="button"><a href='/apartments/new'>Add a NEW car</a></button>
