@@ -1,0 +1,4 @@
+%h2 CARS!
+%ul.car-list
+  - @cars.each do |car|
+    %li= "#{car.make} #{car.model}"
