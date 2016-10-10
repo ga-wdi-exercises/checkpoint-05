@@ -16,7 +16,7 @@ get '/cars/new' do
   erb :index
 end
 
-post 'cars' do
+post '/cars' do
   @cars = Car.create(params[:id])
 redirect '/cars'
 end
