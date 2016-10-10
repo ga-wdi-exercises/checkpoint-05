@@ -1,0 +1,31 @@
+%h2 Here are some cars:
+.cars
+  - @cars.each do |car|
+    .car
+      %h3="#{car.make} #{car.model}"
+      %ul.stats
+        %li= car.year
+        %li= car.color
+        %li= car.transmission
+.new-car-form
+  %h2 Want more cars?
+  %form{action: "/cars", method: "post"}
+    %label Year:
+    %input{name: "car[year]"}
+
+    %label Make:
+    %input{name: "car[make]"}
+
+    %label Model:
+    %input{name: "car[model]"}
+
+    %label Color:
+    %input{name: "car[color]"}
+
+    %br
+    %label Transmission:
+    %input{type: "radio", name: "car[transmission]", value: "automatic"} Automatic
+    %input{type: "radio", name: "car[transmission]", value: "manual"} Manual
+
+
+    %input{type: "submit", value: "Create"}

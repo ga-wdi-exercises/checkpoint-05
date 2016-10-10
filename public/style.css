@@ -1,0 +1,28 @@
+body {
+  background: tomato;
+}
+
+.cars {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.car {
+  background: bisque;
+  flex: 1 1 150px;
+  max-width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px dotted tomato;
+  margin: 10px;
+}
+
+/*form {
+  display: flex;
+  flex-direction: column;
+}*/
+
+label {
+  font-weight: bold;
+}
