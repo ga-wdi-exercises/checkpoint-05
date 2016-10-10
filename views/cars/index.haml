@@ -1,4 +1,9 @@
-%h2 CARS!
-%ul.car-list
+%h2 Here are some cars:
+.cars
   - @cars.each do |car|
-    %li= "#{car.make} #{car.model}"
+    .car
+      ="#{car.make} #{car.model}"
+      %ul.stats
+        %li= car.year
+        %li= car.color
+        %li= car.transmission

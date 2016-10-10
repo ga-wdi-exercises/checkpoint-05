@@ -1,0 +1,16 @@
+body {
+  background: tomato;
+}
+
+.cars {
+  display: flex;
+  justify-content: space-around;
+}
+
+.car {
+  background: bisque;
+  flex: 0 1 250px;
+  /*width: 250px;*/
+  padding: 10px;
+  border-radius: 10px;
+}
