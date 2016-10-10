@@ -4,16 +4,16 @@ require 'active_record'
 require_relative 'db/connection'
 require_relative 'models/car'
 
-get '/cars' do
+get '/car' do
   @cars = Car.all
   erb :"car/index"
 end
 
-get '/cars/new' do
+get '/car/new' do
   erb :"car/new"
 end
 
-post "/cars" do
+post "/car" do
   Car.create(params[:car])
-  redirect "/cars"
+  redirect "/car"
 end
