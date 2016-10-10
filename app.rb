@@ -7,3 +7,8 @@ get '/cars' do
   @cars = Car.all
   haml :"/cars/index"
 end
+
+post '/cars' do
+  @car = Car.create(params[:car])
+  redirect "/cars"
+end
