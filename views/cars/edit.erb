@@ -1,0 +1,22 @@
+<h1>Edit Car</h1>
+
+<form action="/cars/<%= @car.id %>" method="post">
+  <input type="hidden" name="_method" value="put"/>
+
+  <label>Make</label>
+  <input type="text" name="car[make]" value="<%= @car.make %>" />
+
+  <label>Model</label>
+  <input type="text" name="car[model]" value="<%= @car.model %>"/>
+
+  <label>Year</label>
+  <input type="text" name="car[year]" value="<%= @car.year %>"/>
+
+  <label>Transmission</label>
+  <input type="text" name="car[transmission]" value="<%= @car.transmission %>"/>
+
+  <label>Color</label>
+  <input type="text" name="car[color]" value="<%= @car.color %>"/>
+
+  <button type="submit">Submit</button>
+</form>
