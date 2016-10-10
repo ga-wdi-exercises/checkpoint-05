@@ -8,3 +8,14 @@ get '/cars' do
   @cars = Car.all
   erb :index
 end
+
+get '/cars/new' do
+  erb :new
+
+end
+
+post '/cars' do
+  @car = Car.create(params[:cars])
+  puts params
+  redirect "/cars"
+end
