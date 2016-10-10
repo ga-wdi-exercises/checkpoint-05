@@ -6,3 +6,8 @@ require_relative 'models/car'
 get '/cars' do
   @cars = Car.all
 end
+
+post '/cars/' do
+  @cars = Car.new
+  redirect '/cars'
+end
