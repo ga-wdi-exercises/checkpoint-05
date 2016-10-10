@@ -1,4 +1,5 @@
 require 'active_record'
+require 'pg'
 require_relative 'connection'
 require_relative '../models/car'
 
