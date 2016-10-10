@@ -1,0 +1,9 @@
+<h2>Cars Index</h2>
+
+<ul>
+<% @cars.each do |c| %>
+<li><%= c.make %></li>
+<li><%= c.model %></li>
+<li><%= c.year %></li>
+<% end %>
+</ul>
