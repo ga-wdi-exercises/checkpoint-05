@@ -1,3 +1,6 @@
+DROP TABLE IF EXISTS cars;
+DROP TABLE IF EXISTS cars;
+
 require 'active_record'
 require_relative 'connection'
 require_relative '../models/car'
