@@ -1,3 +1,6 @@
+DROP TABLE IF EXISTS songs;
+DROP TABLE IF EXISTS artists;
+
 require 'active_record'
 require_relative 'connection'
 require_relative '../models/car'
