@@ -1,0 +1,14 @@
+<h2> Cars </h2>
+<a href = '/cars/new'>Click here to make a new car!<a>
+<ul>
+
+  <% @cars.each do |car| %>
+  <p> <%= "Car #{car.id}" %> </p>
+  <li> <%= car.year %> </li>
+  <li> <%= car.make %> </li>
+  <li> <%= car.model %> </li>
+  <li> <%= car.transmission %> </li>
+  <li> <%= car.color %> </li>
+
+<% end %>
+</ul>
