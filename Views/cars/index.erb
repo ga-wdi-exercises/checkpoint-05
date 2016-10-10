@@ -1,0 +1,13 @@
+<h2>View all cars</h2>
+
+<ul>
+<% @cars.each do |car| %>
+  <li id = "listHead"><%= car.make %> <%=car.model%>
+    <li>Year:<%=car.year%></li>
+    <li>Color:<%=car.color%></li>
+    <li>Transmission:<%=car.transmission%></li>
+  </li>
+<% end %>
+</ul>
+
+<a href="/cars/new">Create a New Car</a>
