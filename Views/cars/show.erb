@@ -1,0 +1,12 @@
+<h2>Car</h2>
+
+
+<%=@car.name %>
+
+<form action="/cars/<%=@car.id%>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <button type="submit" name="button">delete car</button>
+
+</form>
+
+<a href="/cars">Return to home</a>
