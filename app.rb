@@ -15,3 +15,14 @@ post '/cars' do
   Car.create(params[:car])
   redirect '/cars'
 end
+
+get '/cars/:id/edit' do
+  @cars = Car.find(params[:id])
+  erb :"/cars/edit"
+end
+
+put '/cars/:id' do
+  @cars = Car.find(params[:id])
+  @cars = Car.update(params[:car])
+  redirect "/cars"
+end
