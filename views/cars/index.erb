@@ -1,0 +1,36 @@
+<h1>Cars Index</h1>
+
+<ul>
+  <% @cars.each do |car| %>
+  <li><%= car.make %> <%= car.model %>
+    <ul>
+      <li><%= car.year %></li>
+      <li><%= car.transmission %></li>
+      <li><%= car.color %></li>
+    </ul>
+  </li>
+  <% end %>
+</ul>
+
+<hr/>
+
+<h1>Add a New Car</h1>
+
+<form action="/cars" method="post">
+  <label>Make</label>
+  <input type="text" name="car[make]"/>
+
+  <label>Model</label>
+  <input type="text" name="car[model]"/>
+
+  <label>Year</label>
+  <input type="text" name="car[year]"/>
+
+  <label>Transmission</label>
+  <input type="text" name="car[transmission]"/>
+
+  <label>Color</label>
+  <input type="text" name="car[color]"/>
+
+  <button type="submit">Submit</button>
+</form>
