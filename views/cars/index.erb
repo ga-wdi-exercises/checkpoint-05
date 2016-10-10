@@ -1,0 +1,39 @@
+<h2>All Cars</h2>
+
+<% @cars.each do |car| %>
+  <div class="listing">
+    <h3><%= car.model %></h3>
+    <p>Make: <%= car.make %></p>
+    <p>Year: <%= car.year %></p>
+    <p>Transmission: <%= car.transmission %></p>
+    <p>Color: <%= car.color %></p>
+    <a href="/cars/<%= car.id %>/edit">Edit Car Information</a>
+  </div>
+<% end %>
+
+<form action="/cars" method="post">
+  <h2>Add New Car</h2>
+<p>
+  <label>Make</label>
+  <input type="text" name="make">
+</p>
+<p>
+  <label>Model</label>
+  <input type="text" name="model">
+</p>
+<p>
+  <label> Year</label>
+  <input type="text" name="year">
+</p>
+<p>
+  <label>Transmission</label>
+  <input type="text" name="transmission">
+</p>
+<p>
+  <label>Color</label>
+  <input type="text" name="color">
+</p>
+
+  <button type="submit">Add Car</button>
+
+</form>
