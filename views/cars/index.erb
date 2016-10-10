@@ -1,0 +1,16 @@
+<h2>Cars Pls</h2>
+
+<ul>
+<% @cars.each do |car| %>
+  <p><li><%= car.year %></li>
+  <li><%= car.make %></li>
+  <li><%= car.model %></li>
+  <li><%= car.color %></li>
+  <li><%= car.transmission %></li></p>
+<% end %>
+</ul>
+
+
+<form action="/cars/new">
+  <button>Add a New Car!</button>
+</form>
