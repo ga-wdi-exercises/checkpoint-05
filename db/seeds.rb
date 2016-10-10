@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS songs;
-DROP TABLE IF EXISTS artists;
+DROP TABLE IF EXISTS cars;
+DROP TABLE IF EXISTS cars;
 
 require 'active_record'
 require_relative 'connection'

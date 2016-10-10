@@ -3,8 +3,8 @@ require 'sinatra/reloader'
 require_relative 'db/connection'
 require_relative 'models/car'
 
-get '/cars' do
-  @cars = Car.all
+get '/car' do
+  @car = Car.all
   erb :"car/index"
 end
 
