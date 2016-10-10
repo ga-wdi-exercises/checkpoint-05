@@ -14,3 +14,12 @@ body {
   padding: 10px;
   border-radius: 10px;
 }
+
+/*form {
+  display: flex;
+  flex-direction: column;
+}*/
+
+label {
+  font-weight: bold;
+}
