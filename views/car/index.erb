@@ -2,6 +2,7 @@
 
 <ul>
 <% @cars.each do |car| %>
+  <h3>Car #<%= car.id %></h3>
   <li><%= car.year %></li>
   <li><%= car.make %></li>
   <li><%= car.model %></li>
