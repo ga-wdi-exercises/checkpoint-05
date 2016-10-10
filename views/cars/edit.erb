@@ -1,0 +1,32 @@
+<form action="/cars/<%= @car.id %>" method="post">
+  <input type="hidden" name="_method" value="put">
+  <h2>Edit Car Information</h2>
+<p>
+  <label>Make</label>
+  <input type="text" name="make" value="<%= @car.make %>">
+</p>
+<p>
+  <label>Model</label>
+  <input type="text" name="model" value="<%= @car.model %>">
+</p>
+<p>
+  <label> Year</label>
+  <input type="text" name="year" value="<%= @car.year %>">
+</p>
+<p>
+  <label>Transmission</label>
+  <input type="text" name="transmission" value="<%= @car.transmission %>">
+</p>
+<p>
+  <label>Color</label>
+  <input type="text" name="color" value="<%= @car.color %>">
+</p>
+
+  <button type="submit"> Save </button>
+
+</form>
+
+<form action="/cars/<%= @car.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <button type="submit">Delete Car</button>
+</form>

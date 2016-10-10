@@ -1,0 +1,16 @@
+body {
+  background: black;
+  color: white;
+  font: Garamond 14px;
+}
+
+div.listing {
+  display: inline-block;
+  background: grey;
+  padding: 30px;
+  margin: 10px;
+}
+
+div.listing:hover {
+  background: rgba(255, 255, 255, 0.7)
+}
