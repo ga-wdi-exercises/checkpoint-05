@@ -1,0 +1,24 @@
+<h1>Create a New Car</h1>
+
+<form action="/cars" method="post">
+  <label>Year</label>
+  <input type="text" name ="car[year]"
+
+  <label>Make</label>
+  <input type="text" name ="car[make]"
+
+  <label>Model</label>
+  <input type="text" name ="car[model]"
+
+  <label>Color</label>
+  <input type="text" name ="car[color]"
+
+  <label>transmission</label>
+  <input type="text" name ="car[transmission]"
+
+  <input type="submit" value="Create">
+</form>
+
+<% @cars.each do |car| %>
+<p><%= car %></p>
+<% end %>
