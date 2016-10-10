@@ -2,13 +2,7 @@
 
 <ul>
   <% @cars.each do |car| %>
-  <li><%= car.make %> <%= car.model %>
-    <ul>
-      <li><%= car.year %></li>
-      <li><%= car.transmission %></li>
-      <li><%= car.color %></li>
-    </ul>
-  </li>
+  <li><a href="/cars/<%= car.id %>"><%= car.make %> <%= car.model %></a></li>
   <% end %>
 </ul>
 
