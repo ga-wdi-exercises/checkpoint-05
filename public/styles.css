@@ -1,0 +1,18 @@
+body, html {
+  font-family:helvetica, sans-serif;
+  background-color: #4B0082;
+  color:grey;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+ul {
+  font-size:16px;
+}
+
+p {
+  font-size: 10px;
+  color:darkgrey;
+}
