@@ -5,4 +5,12 @@ require_relative 'models/car'
 
 get '/cars' do
   @cars = Car.all
+  erb :index
+end
+
+get '/cars/new' do
+  erb :index
+end
+
+post 'cars' do
 end

@@ -2,6 +2,8 @@ require 'active_record'
 require_relative 'connection'
 require_relative '../models/car'
 
+Car.destroy_all
+
 Car.create(
   year: 1997,
   make: 'Honda',
