@@ -1,7 +1,7 @@
 <ul>
   <% @posts.each do |post| %>
     <li>
-      <p>Title: "<%= post.body %>"</p>
+      <p>Title: "<%= link_to post.body, post %>"</p>
       <p>By: <%= post.author %></p>
     </li>
   <% end %>
