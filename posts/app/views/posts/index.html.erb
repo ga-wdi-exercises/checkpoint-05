@@ -1,0 +1,8 @@
+<ul>
+  <% @posts.each do |post| %>
+    <li>
+      <p>Title: "<%= post.body %>"</p>
+      <p>By: <%= post.author %></p>
+    </li>
+  <% end %>
+</ul>
