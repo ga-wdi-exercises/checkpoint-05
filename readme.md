@@ -1,7 +1,7 @@
 # Checkpoint 05
 
 ## Part 1 (Initial Setup)
-We've created a new rails app with a single model called `Posts` in this repository.
+We've created a new rails app with a single model called `Posts` in this repository.dsafdadf
 
 1. Fork and clone this repo.
 1. Create your own `Posts` seed data with body and author fields.
