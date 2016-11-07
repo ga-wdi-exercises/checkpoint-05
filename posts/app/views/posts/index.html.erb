@@ -1,0 +1,12 @@
+<ul>
+  <h2><%= link_to "New Post", new_post_path %></h2>
+  
+  <% @posts.each do |post| %>
+  <li>
+    <p><%= post.body %></p>
+  </li>
+  <li>
+    <p> <%= post.author %></p>
+  </li>
+  <% end %>
+</ul>
