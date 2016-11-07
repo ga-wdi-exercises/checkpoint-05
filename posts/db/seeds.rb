@@ -5,3 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require_relative './post_data.rb'
+
+Post.destroy_all
+
+post_data = get_post_data()
+
+post_data.each_pair do |author_name, body|
+  info = post_data[author_name]
+  current_post = Post.create!({
+    author: info[:name],
+    body:   info[:body]
+    })
+  end
