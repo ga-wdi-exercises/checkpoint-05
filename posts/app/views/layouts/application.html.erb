@@ -6,9 +6,18 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="/stylesheets/application.css" media="screen" title="no title">
   </head>
 
   <body>
+  <header>
+    <h1>Posts Application</h1>
+
+    <nav>
+      <%= link_to "Home", posts_path %>
+    </nav><hr>
+  </header>
+
     <%= yield %>
   </body>
 </html>
