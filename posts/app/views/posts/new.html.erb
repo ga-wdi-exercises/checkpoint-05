@@ -1,0 +1,10 @@
+<h2><%= link_to "Homepage", posts_path %></h2>
+<%= form_for @post do |f| %>
+  <%= f.label :body %>
+  <%= f.text_field :body %>
+
+  <%= f.label :author %>
+  <%= f.text_field :author %>
+
+  <%= f.submit %>
+<% end %>
