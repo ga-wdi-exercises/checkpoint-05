@@ -1,0 +1,10 @@
+<h1>holy shit we made it</h1>
+
+<% @posts.each do |post| %>
+<ul>
+  <li>
+  <%= link_to post.body, posts_path(post) %>
+  <%= post.author %>
+  </li>
+</ul>
+<% end %>
