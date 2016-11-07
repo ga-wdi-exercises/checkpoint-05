@@ -1,0 +1,10 @@
+<h1>Posts#view</h1>
+<p>Find me in app/views/posts/view.html.erb</p>
+
+<%= form_for @post do |f| %>
+<%= f.label :author %>
+<%= f.text_field :author %>
+<%= f.label :body %>
+<%= f.text_field :body %>
+<%= f.submit %>
+<% end %>
