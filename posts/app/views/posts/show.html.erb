@@ -1,0 +1,4 @@
+<h2><%= link_to "Posts", posts_path %></h2>
+<p> <%= @post.body %></p>
+<p> <%= @post.author %></p>
+<p><%= link_to "Delete Post", post_path(@post), method: :delete %></p>
