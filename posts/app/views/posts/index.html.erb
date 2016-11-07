@@ -1,0 +1,8 @@
+<h1>Posts</h1>
+<% @posts.each do |post| %>
+  <h3><%= post.author %></h3>
+  <%= link_to 'Show', post_path(post) %>
+<% end %>
+<br>
+<br>
+<h2><%= link_to 'New Post', new_post_path %></h2>
