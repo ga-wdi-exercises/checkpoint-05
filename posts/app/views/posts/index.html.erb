@@ -1,0 +1,9 @@
+<h2>Current Posts</h2>
+
+<ul>
+  <% @post.each do |post| %>
+    <li>
+      <%= link_to post.name, date %>
+    </li>
+  <% end %>
+</ul>
