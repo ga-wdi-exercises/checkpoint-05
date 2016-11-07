@@ -1,0 +1,10 @@
+
+<%= form_for @post do |f| %>
+  <%= f.label :author_name %>
+  <%= f.text_field :author %>
+
+  <%= f.label :biography %>
+  <%= f.text_field :body %>
+
+  <%= f.submit value="Add Author" %>
+<% end %>
