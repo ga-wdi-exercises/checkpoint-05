@@ -4,6 +4,7 @@
   <% @todos.each do |todo| %>
     <li>
       <%= link_to todo.id, todo %>
+      <%= todo.content %></br>
     </li>
   <% end %>
 </ul>
