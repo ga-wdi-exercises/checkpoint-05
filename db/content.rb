@@ -1,3 +1,3 @@
 def get_content_data
-  content_data = {"wizards"=>[{:name=>"John Wall", :file=>"Photo", :size=>"1028x720"}, {:name=>"Bradley Beal", :file=>"Photo", :size=>"1028x720"}, {:name=>""}]
+  content_data = {"List of Things To Do"=>[{:name=>"Grocery Shopping", :file=>"Photo", :size=>"1028x720"}, {:name=>"Wash Car", :file=>"Photo", :size=>"1028x720"}, {:name=>"Checkpoint Review", :file=>"Photo", :size=>"1028x720"}, {:name=>"Homework", :file=>"Photo", :size=>"1028x720"}]
 end

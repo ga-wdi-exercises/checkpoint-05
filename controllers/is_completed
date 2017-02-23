@@ -1,4 +1,4 @@
-# index
+#index
 get "/content" do
   @content = Content.all
   erb(:"content/index")
