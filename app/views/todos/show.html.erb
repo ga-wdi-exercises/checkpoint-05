@@ -4,3 +4,7 @@
 <p>
   <%= link_to "edit", edit_todo_path(@todo)%>
 </p>
+
+<%= form_for @todo, method: :delete do |f| %>
+  <%= f.submit "Delete!", class: "delete" %>
+<% end %>
