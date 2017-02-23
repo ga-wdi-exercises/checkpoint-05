@@ -26,7 +26,7 @@
   color: green;
 }
 
-.back_button {
+.button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,10 +37,10 @@
   border: 2px solid grey;
 }
 
-.back_button:hover {
+.button:hover {
     background: rgba(0,0,128,0.5);
 }
 
-.back_link {
+.button_link {
   text-decoration: none;
 }
