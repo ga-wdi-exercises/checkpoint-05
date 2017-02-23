@@ -1,12 +1,15 @@
-# Checkpoint 05
+# Checkpoint 05: Rails
+
+#### Fork and clone this repo.
 
 ## Part 1 (Initial Setup)
-We've created a new rails app with a single model called `Posts` in this repository.
 
-1. Fork and clone this repo.
-1. Create your own `Posts` seed data with body and author fields.
-1. Seed your database.
-1. Run your rails server to see your app in the browser.
+1. Run the command to generate a new Rails application called `todo_app`.
+1. Create your database.  
+1. Define a `Todo` model and create a corresponding migration. It should have two attributes: `content` (string) and `is_completed` (boolean).
+1. Generate your schema.
+1. Create two Todo instances in your seed file. Run your seed file.
+1. Run your Rails server to see your application in the browser.
 
 ## Part 2 (Error Driven Development)
 
