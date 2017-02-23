@@ -1,0 +1,10 @@
+<h2>List of Todos</h2>
+
+<ul>
+  <% @todos.each do |todo| %>
+    <li>
+      <%=link_to todo.name, todo %>
+    </li>
+
+</ul>
+<% end %>
