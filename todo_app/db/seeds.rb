@@ -5,3 +5,21 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+
+require 'active_record'
+
+
+# models
+require_relative '../app/models/lists'
+require_relative '../app/models/todo'
+
+
+List.destroy_all
+Todo.destroy_all
+
+
+
+new_todo = Todo.create(content: "groceries", is_completed: true)
+ groceries = new_todo.lists.create(content: "banana, mango,bread")
