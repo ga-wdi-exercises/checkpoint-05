@@ -1,0 +1,15 @@
+<h1>This is an index</h1>
+
+<ol>
+  <% @todos.each do |todo| %>
+    <% if todo.is_completed == true %>
+      <li><span class="completed"><%= todo.content %></span> <a href="/todos/ <%= todo.id %>">DETAILS</a></li>
+    <% else %>
+      <li><%= todo.content %> <a href="/todos/ <%= todo.id %>">DETAILS</a></li>
+    <% end %>
+    <br>
+  <% end %>
+</ol>
+
+
+<a class="button_link" href="/todos/new"><h4 class="button">NEW ITEM</h4></a>

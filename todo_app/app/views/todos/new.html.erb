@@ -1,0 +1,16 @@
+<h1>LET'S MAKE SOME NEW STUFF</h1>
+
+<form action="/new_todo" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+  <label for="todo[content]">What Do You Need to Do?</label>
+  <br>
+  <input name="todo[content]">
+
+  <input type="hidden" name="todo[is_completed]" value= false>
+
+  <br>
+  <br>
+
+  <input type="submit" value="CREATE">
+</form>

@@ -1,0 +1,23 @@
+<h1>LET'S LOOK AT SOME SHIT</h1>
+
+<p><%= @todo.content %></p>
+
+<% if @todo.is_completed == true %>
+  <h2 class="green">CONGRATULATIONS YOU DID THE THING!!!!!!</h2>
+<% else %>
+  <h2 class="red">!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</h2>
+  <h2 class="red">YOU NEED TO DO THE THING!!!!!!</h2>
+  <h2 class="red">!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</h2>
+<% end %>
+
+<% if @todo.is_completed == false %>
+  <form action="/todos/<%= @todo.id %>/complete" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+    <input type="hidden" name="todo[is_completed]" value= true>
+
+    <input class="button" type="submit" value="COMPLETE">
+  </form>
+<% end %>
+
+<a class="button_link" href="/"><h4 class="button">BACK</h4></a>
