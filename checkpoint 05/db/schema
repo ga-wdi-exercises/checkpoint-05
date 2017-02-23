@@ -1,0 +1,8 @@
+enable_extension "plqgsql"
+
+create_table "todo", force: :cascade do |t|
+  t.integer "id"
+  t.string "activity"
+  t.boolean "completed"
+  end
+end
