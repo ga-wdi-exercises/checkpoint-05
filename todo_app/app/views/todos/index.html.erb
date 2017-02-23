@@ -3,5 +3,6 @@
 <% @todos.each do |tod| %>
   <h1><%= tod.content %></h1>
   <h6><%= tod.is_completed.to_s%></h6>
-  
+  <%= link_to 'check it', todo_path(tod) %>
 <% end %>
+<%= link_to 'add a new one', new_todo_path %>
