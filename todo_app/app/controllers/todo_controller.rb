@@ -9,5 +9,6 @@ class TodoController < ApplicationController
 
   def new
   	@todo = Todo.new(params[:todo])
+  	
   end
 end

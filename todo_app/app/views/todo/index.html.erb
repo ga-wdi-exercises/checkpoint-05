@@ -1,6 +1,9 @@
 <h1>Todo#index</h1>
 
+<h4> New Todo <%= link_to "New Todo",new_todo_path(@todo) %>
+
 <h2> List of My Todos </h2>
+
 
 <ul>
 <p><% @todos.each do |todo| %>
@@ -10,6 +13,8 @@
 </p>
 
 <% end %>
+
+
 
 
 <p>Find me in app/views/todo/index.html.erb</p>

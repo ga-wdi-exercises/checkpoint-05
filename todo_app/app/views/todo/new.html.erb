@@ -1,2 +1,13 @@
 <h1>Todo#new</h1>
+<h4> <%= link_to "Home", root_path(@todos) %>
+<p>
+<%= form_for :todo do |f| %>
+Content: <%= f.text_field :content %>
+
+<%= f.submit %>
+
+	
+</p>
+<% end%>
+
 <p>Find me in app/views/todo/new.html.erb</p>
