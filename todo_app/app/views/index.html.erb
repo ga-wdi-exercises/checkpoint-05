@@ -1,0 +1,6 @@
+<h2> List of My Todos </h2>
+
+<% @todos.each do |todo|  %>
+	<li><%= todo.content %></li>
+	<li><%= todo.is_completed %></li>
+<% end %>
