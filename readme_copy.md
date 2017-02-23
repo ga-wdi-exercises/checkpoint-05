@@ -1,5 +1,6 @@
-1. Implement controller actions and views for the `index`, `show` and `new` features.
-
+index view
+show view
+new view
 
 ***Bonus***
 
