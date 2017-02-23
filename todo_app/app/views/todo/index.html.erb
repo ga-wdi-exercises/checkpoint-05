@@ -1,0 +1,17 @@
+
+<h1>Listing todos</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+
+  <% @todos.each do |todo| %>
+    <tr>
+      <td><%= todo.content %></td>
+      <td><%= todo.is_completed %></td>
+      
+    </tr>
+  <% end %>
+</table>
