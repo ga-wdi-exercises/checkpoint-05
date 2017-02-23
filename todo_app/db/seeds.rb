@@ -3,5 +3,15 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+Todo.create([{content: 'what happin today, got that homework done?', is_completed: false}, {content: 'write youre resume?', is_completed: false}])
+
+
+
+
+
+
+
+
+
+# movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
