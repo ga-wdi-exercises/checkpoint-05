@@ -1,0 +1,10 @@
+<h1>Todo#index</h1>
+
+<h2> List of My Todos </h2>
+
+<ul>
+<% @todos.each |todo| do %>
+	<li><%= todo.content %></li>
+	<li><%= todo.is_completed %></li>
+</ul>
+<p>Find me in app/views/todo/index.html.erb</p>
