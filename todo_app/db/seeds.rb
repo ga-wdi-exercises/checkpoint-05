@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Todo.create!([{content: "Need to go shopping", is_completed: true},
-              {content: "Need to finish packing", is_completed: false}])
+task1 = Todo.create!({content: "Go shopping", is_completed: true})
+task2 = Todo.create!({content: "Finish packing", is_completed: false})
 
 puts "Created #{Todo.count} todos"
