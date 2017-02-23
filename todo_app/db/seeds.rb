@@ -8,5 +8,5 @@
 
 Todo.destroy_all
 
-travis = Todo.create(name:"travis")
-bob = Todo.create(name:"bob")
+travis = Todo.create(content:"travis")
+bob = Todo.create(content:"bob")
