@@ -1,0 +1,11 @@
+<h2>Content <a href="/content/new">(+)</a></h2>
+
+<ul>
+  <% @content.each do |content| %>
+    <li>
+      <a href="/content/<%= content.id %>">
+        <%= content.name %>
+      </a>
+    </li>
+  <% end %>
+</ul>
