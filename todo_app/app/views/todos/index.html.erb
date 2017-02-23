@@ -1,0 +1,9 @@
+<h2>Todo List </h2>
+
+<ul>
+  <% @todos.each do |todo| %>
+    <li>
+      <%= link_to todo.content, todo_path(todo.id) %>
+    </li>
+  <% end %>
+</ul>
