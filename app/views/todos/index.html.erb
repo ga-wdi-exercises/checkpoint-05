@@ -1,0 +1,9 @@
+<h2>Todos <%= link_to "(+)", new_todo_path %></h2>
+
+<% @todos.each do |todo| %>
+  <% if !todo.is_completed %>
+    <p><%= link_to todo.content, todo_path(todo) %> | <%= link_to " (edit)", edit_todo_path(todo) %></p>
+  <% elsif %>
+    <p><strike><%= link_to todo.content, todo_path(todo) %></strike> | <%= link_to " (edit)", edit_todo_path(todo) %></p>
+  <% end %>
+<% end %>

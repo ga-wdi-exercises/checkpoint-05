@@ -1,0 +1,10 @@
+<h5><%= link_to "Todo List", todos_path %></h5>
+<h3><%= @todo.content %></h3>
+<h4>Completed? <%= @todo.is_completed %></h4>
+<p>
+  <%= link_to "edit", edit_todo_path(@todo)%>
+</p>
+
+<%= form_for @todo, method: :delete do |f| %>
+  <%= f.submit "Delete!", class: "delete" %>
+<% end %>
