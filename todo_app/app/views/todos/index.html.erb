@@ -1,0 +1,10 @@
+<h1>Todos index</h1>
+<ul>
+
+<% @todo.each do |todo| %>
+  <li>
+    <%= todo.content %>
+    <%= todo.is_completed %>
+  </li>
+  <% end %>
+</ul>
