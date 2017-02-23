@@ -1,0 +1,18 @@
+<h2><%= @content.name %>>(edit)</a></h2>
+<h3><%= @content.file %></h3>
+<h4><%= @content.size %></h4>
+
+<img class='content-photo' src="<%= @content.file %>">
+
+<h3>Songs</h3>
+<ul>
+  <% @content.each do |content| %>
+    <!-- build the list element for each song -->
+    <li>
+      <a href="/content/<%= content.id %>">
+        <%= content.title %>
+      </a>
+    </li>
+
+  <% end %>
+</ul>
