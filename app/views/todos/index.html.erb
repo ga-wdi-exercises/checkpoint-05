@@ -1,0 +1,10 @@
+<div class="well">
+<%= link_to "Create New Post", new_todo_path %>
+    <% @todo.each do |todo| %>
+    <div class="well">
+      <h4>Task: </h4><h5><%= link_to todo.content, todo_path(todo) %></h5>
+        <h4>Completed: </h4><h5> <%= todo.is_completed %></h5>
+    </div>
+    <hr>
+    <% end %>
+</div>
