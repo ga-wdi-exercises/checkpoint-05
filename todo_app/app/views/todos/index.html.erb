@@ -1,5 +1,5 @@
 <h2>Index <%= link_to "(+)", new_todo_path %></h2>
 
-<%= @todos.each do |todo| %>
-  <p><%= link_to todo.content, todo_path(todo) %></p>
+<% @todos.each do |todo| %>
+  <p><%= link_to todo.content, todo %></p>
 <% end %>
