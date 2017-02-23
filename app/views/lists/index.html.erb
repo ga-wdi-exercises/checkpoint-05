@@ -1,0 +1,18 @@
+<h1>All lists</h1>
+
+<%= link_to 'New list', new_list_path %>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+    <th colspan="3"></th>
+  </tr>
+
+  <% @lists.each do |list| %>
+    <tr>
+      <td><%= list.content %></td>
+      <td><%= list.is_completed %></td>
+      <td><%= link_to 'Show', list_path(list) %></td>
+    </tr>
+  <% end %>
+</table>
