@@ -4,6 +4,7 @@
   <% @todos.each do |todo| %>
     <li>
       <%= link_to todo.content, todo_path(todo.id) %> <%= link_to "edit", edit_todo_path(todo.id) %>
+      <%= link_to "delete", "/todos/#{todo.id}/delete" %>
 
     </li>
   <% end %>
