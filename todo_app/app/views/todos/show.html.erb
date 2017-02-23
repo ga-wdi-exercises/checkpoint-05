@@ -1,0 +1,5 @@
+
+<h2><%= link_to "Update", edit_todo_path %>
+<%= form_for @todo, method: :delete do |f| %>
+  <%= f.submit "Remove", class: "delete" %>
+<% end %>
