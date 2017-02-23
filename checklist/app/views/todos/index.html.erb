@@ -1,0 +1,9 @@
+<h1> To Do List </h1>
+
+<% @todos.each do |task| %>
+<h3> <%= link_to task.content, todo_path(task) %> </h3>
+<%end%>
+
+<h4>
+  <%= link_to "Add Task", new_todo_path(@post) %>
+</h4>

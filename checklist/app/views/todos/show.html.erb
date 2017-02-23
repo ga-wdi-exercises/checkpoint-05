@@ -1,0 +1,11 @@
+<h1><%= @todo.content %></h1>
+
+
+<h3> Completion: <%= @todo[:is_completed] %> </h3>
+
+
+<%= form_for @todo, url: "/todos/#{@todo.id}", method: :delete do |f| %>
+  <% f.submit "DELETE", class: "btn-delete" %>
+<% end %>
+
+<h4> <a href="/todos"> < Back </a></h4>
