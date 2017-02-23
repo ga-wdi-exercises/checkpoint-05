@@ -1,4 +1,3 @@
-1. Create two Todo instances in your seed file. Run your seed file.
 1. Run your Rails server to see your application in the browser.
 
 ## Part 2 (Error Driven Development)
