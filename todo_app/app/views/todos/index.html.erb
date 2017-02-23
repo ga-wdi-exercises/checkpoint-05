@@ -1,0 +1,12 @@
+<h1> Todos </h1>
+
+<h2><a href="todos/new">New Post?</a></h2>
+
+<%= @todos.each do |todo| %>
+
+<div class="todos">
+  <p><%= todo.content %></p>
+  <p><%= todo.is_completed %></p>
+</div>
+
+<% end %>

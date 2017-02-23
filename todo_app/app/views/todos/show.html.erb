@@ -1,0 +1,12 @@
+<h1> Show All</h1>
+
+<h1><%= @todo.content %></h1>
+
+<% @todo.each do |t| %>
+  <div class="post">
+    <li>
+      <%= t.content %>
+      <%= t.is_completed %>
+    </li>
+  </div>
+<% end %>
