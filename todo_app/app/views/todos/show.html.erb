@@ -1,0 +1,13 @@
+<h1>LET'S LOOK AT SOME SHIT</h1>
+
+<p><%= @todo.content %></p>
+
+<% if @todo.is_completed == true %>
+  <h2 class="green">CONGRATULATIONS YOU DID THE THING!!!!!!</h2>
+<% else %>
+  <h2 class="red">!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</h2>
+  <h2 class="red">YOU NEED TO DO THE THING!!!!!!</h2>
+  <h2 class="red">!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</h2>
+<% end %>
+
+<a class="back_link" href="/"><h4 class="back_button">BACK</h4></a>
