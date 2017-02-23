@@ -17,6 +17,10 @@ def create
   redirect_to todos_path
 end
 
+def edit
+  @todo = Todo.find(params[:id])
+end
+
 private
 def todo_params
   params.require(:todo).permit(:content, :is_completed)
