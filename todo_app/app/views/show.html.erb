@@ -1,0 +1,14 @@
+<h2>New Todo List</h2>
+
+<%= form_for @todo do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :task %>
+  <%= f.text_field :task %>
+
+  <%= f.label :status %>
+  <%= f.text_field :status %>
+
+  <%= f.submit %>
+<% end %>
