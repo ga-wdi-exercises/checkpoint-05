@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   get "/" => "todos#index"
   get "/todos/new" => "todos#new"
+  post "/todos/:id/complete" => "todos#complete"
   get "/todos/:id" => "todos#show"
   post "/new_todo" => "todos#create"
 end
