@@ -1,0 +1,10 @@
+<h2>Todos <%= link_to "(+)", new_todo_path %></h2>
+
+<ul>
+  <% @todos.each do |todo| %>
+    <li>
+      <%= link_to todo.id, todo %>
+      <%= todo.content %></br>
+    </li>
+  <% end %>
+</ul>

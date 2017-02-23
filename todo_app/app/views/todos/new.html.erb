@@ -1,0 +1,11 @@
+<h2>New Todo</h2>
+
+<%= form_for @todo do |f| %>
+  <p><%= f.label :content %>
+  <%= f.text_field :content, size: "30x12" %></p>
+
+  <p><%= f.label :is_it_completed? %>
+  <%= f.text_field :is_completed, size: "30x12" %></p>
+
+  <%= f.submit %>
+<% end %>

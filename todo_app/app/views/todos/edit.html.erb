@@ -1,0 +1,15 @@
+<h2>Edit <%= @todo.id %></h2>
+
+<%= form_for @todo, url: "/todos/#{@todo.id}" do |f| %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+
+  <%= f.label :is_it_completed? %>
+  <%= f.text_field :is_completed %>
+
+  <%= f.submit "Edit" %>
+<% end %>
+
+<%= form_for @todo, url: "/todos/#{@todo.id}", method: :delete do |f| %>
+  <% f.submit "Delete", class: "btn-delete" %>
+<% end %>
