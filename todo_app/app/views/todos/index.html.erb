@@ -1,0 +1,4 @@
+<h1>All ToDos</h1>
+<% @todos.each do |todo| %>
+<h2><%= link_to "#{todo.content}", todo_path(todo) %></h2>
+<% end %>
