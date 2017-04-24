@@ -8,5 +8,5 @@
 
 Todo.destroy_all
 
-gryffindor = House.create(name:"Gryffindor", img_url:"http://images1.wikia.nocookie.net/__cb20120922143611/harrypotter/images/7/70/G_final.jpg")
-gryffindor = House.create(name:"Gryffindor", img_url:"http://images1.wikia.nocookie.net/__cb20120922143611/harrypotter/images/7/70/G_final.jpg")
+catbox = Todo.create(content:"clean the catbox", is_completed:false)
+wash_car = Todo.create(content:"wash the car", is_completed:true)
