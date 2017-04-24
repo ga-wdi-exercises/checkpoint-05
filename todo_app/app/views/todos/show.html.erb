@@ -1,0 +1,6 @@
+<h1><%= @todo.content %><%= link_to "(Edit)", edit_todo_path(@todo) %></h1>
+<% if @todo.is_completed != true %>
+  <h2>Still working on it..</h2>
+<% else %>
+  <h2>Complete</h2>
+<% end %>

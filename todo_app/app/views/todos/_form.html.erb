@@ -1,0 +1,18 @@
+<%= form_for @todo, data: { confirm: "Are you done?"} do |f| %>
+  <%= f.label "Todo name" %>
+  <%= f.text_field :content %>
+
+  <%= f.label "Completion" %>
+  <%= f.check_box :is_completed, {}, true, false %>
+
+  <%= f.submit "Save" %>
+
+<% end %>
+
+
+<% if @todo.id != nil %>
+  <%= form_for @todo, data: { confirm: "Do you really want to delete this post?"}, method: :delete do |f| %>
+    <%= f.submit "Delete", class: "deleteButton" %>
+  <% end  %>
+  
+<% end  %>
