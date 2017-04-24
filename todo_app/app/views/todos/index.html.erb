@@ -1,0 +1,10 @@
+<h1> TO DOs!!!!!!!!!!!!!!!  <%= link_to "(+)", new_todo_path %></h1>
+
+<ol>
+  <% @todos.each do |todo| %>
+    <li>
+      <%= link_to todo.content, todo %>
+      <%= "completed? #{todo.is_completed}" %>
+    </li>
+  <% end %>
+</ol>
