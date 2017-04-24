@@ -1,0 +1,9 @@
+<h2>ToDos</h2>
+
+<ul>
+  <% @contents.each.do |content| %>
+  <li>
+    <%= link_to "#{todo.content} - #{todo.is_completed}", todo %>
+  </li>
+  <% end $>
+</ul>
