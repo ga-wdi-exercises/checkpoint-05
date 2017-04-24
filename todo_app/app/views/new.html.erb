@@ -1,0 +1,13 @@
+<h2>New Todo</h2>
+
+<%= form_for @todo do |f| %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+  <br>
+  <br>
+  <%= f.label :complete? %>
+  <%= f.text_field :is_completed, :cols => "40", :rows => "10" %>
+  <br>
+  <br>
+  <%= f.submit %>
+<% end %>
