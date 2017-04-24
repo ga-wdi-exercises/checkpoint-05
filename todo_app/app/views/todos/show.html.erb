@@ -1,0 +1,8 @@
+<h2><%= @todo.content %>:</h2>
+<% if @todo.is_completed == true %>
+<h4> <%= @todo.content %> is completed</h4>
+<% else %>
+<h4> <%= @todo.content %> is not completed</h4>
+<% end %>
+
+<h2><a href="/todos/">Back</a></h2>
