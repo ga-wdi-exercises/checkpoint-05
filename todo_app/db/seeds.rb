@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Todo.destroy_all
+
+todo1 = Todo.create(content: "Wash car", is_completed: false)
+todo2 = Todo.create(content: "Do GA Hw", is_completed: true)
