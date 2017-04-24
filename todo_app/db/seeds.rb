@@ -8,4 +8,5 @@
 
 Todo.destroy_all
 
-todo_1 = Todo.create(content: "Shopping list",)
+todo_1 = Todo.create(content: "Shopping list", is_completed: true)
+todo_2 = Todo.create(content: "Wash the car", is_completed: false)
