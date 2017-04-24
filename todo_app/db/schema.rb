@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170424131555) do
+ActiveRecord::Schema.define(version: 20170424133904) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "todos_tables", force: :cascade do |t|
+  create_table "todos", force: :cascade do |t|
     t.string  "content"
     t.boolean "is_completed"
   end
