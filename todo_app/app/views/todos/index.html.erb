@@ -1,0 +1,4 @@
+<h2>To Do <%= link_to "+", new_todo_path(@todo)%></h2>
+<% @todos.each do |todo| %>
+  <p><input class="check" type="checkbox"><% todo.is_completed %> <%= link_to todo.content, todo_path(todo) %></input></p>
+<% end %>
