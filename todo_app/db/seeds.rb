@@ -8,6 +8,7 @@
 
 
 Todo.destroy_all
+require_relative "../app/models/todo.rb"
 
 Todo.create!([{content: "Finished for Project 2", is_completed: false},
     {content: "Finish for Homework", is_completed: true}
