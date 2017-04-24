@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+review = Todo.create(content: "Review notes", is_completed: false)
+homework = Todo.create(content: "Finish homework", is_completed: false)
