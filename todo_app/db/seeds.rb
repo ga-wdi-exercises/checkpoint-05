@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+todos = Todo.create([
+  {content: "Study Ruby Rails Models and Migrations", is_completed: true},
+  {content: "Stufy Ruby Rails Routes and Controllers", is_completed: true}
+  ])
