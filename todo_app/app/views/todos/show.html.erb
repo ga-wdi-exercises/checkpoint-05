@@ -1,5 +1,7 @@
 <h2>Todo Status</h2>
-<%= link_to "Delete Todo from list", todo_path(@todo), method: :delete %>
+<%= link_to "Edit Todo", edit_todo_path(@todo) %><br>
+<%= link_to "Delete Todo", todo_path(@todo), method: :delete %><br>
+<%= link_to "Back to list", todos_path %>
 <h3>Todo item: <%= @todo.content %></h3>
 <% if @todo.is_completed %>
   <h3>Status: Completed</h3>
