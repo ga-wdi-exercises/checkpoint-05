@@ -2,7 +2,7 @@
 
 ## Set Up
 
-  Fork then clone this repository. Create commits after completing each step.
+  > Fork then clone this repository.
 
 ## Section I (Models & Migrations)
 
