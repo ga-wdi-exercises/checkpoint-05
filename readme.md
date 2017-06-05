@@ -6,7 +6,7 @@
 
 ## Section I (Models & Migrations)
 
-  > Commit once after completing each step.
+  > Commit once after completing each step. If you prefer to write Rails apps 'by hand' rather by using the rails generators, you may do so instead.
 
   1. From the command line, create a new Rails application called `todo_app` that uses a PostgreSQL database.
   2. From the command line, create your database then generate a `Todo` model. `Todo` should have two attributes: `content` (string) and `is_completed` (boolean).
