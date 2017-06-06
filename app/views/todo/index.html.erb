@@ -1,0 +1,11 @@
+<h1>Your To Do List!</h1>
+
+<h4><a href="/todo/new">Add a to do!</a></h4>
+
+<% @todos.each do |todo| %>
+  <li>
+    <a href="/todo/<%=todo.id%>">
+      <%= todo.content %> - <%= todo.is_completed %>
+  </li>
+
+<%end%>
