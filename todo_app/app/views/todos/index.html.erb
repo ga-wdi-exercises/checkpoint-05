@@ -1,0 +1,12 @@
+
+
+<h2>Todos</h2>
+
+<ul>
+ <% @todos.each do |todo| %>
+
+  <li>
+    <h3> <%= link_to todo.content, todo_path(todo) %> </h3>
+  </li>
+<% end %>
+</ul>
