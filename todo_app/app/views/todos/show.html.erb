@@ -1,0 +1,9 @@
+<h4><%= @todo.content %></h4>
+<p><%= link_to '« back', todos_path%></p>
+<p>Is this completed?
+  <% if @todo.is_completed == false %>
+    <p>Nope</p>
+  <% else %>
+    <p>Yes</p>
+  <% end %>
+</p>
