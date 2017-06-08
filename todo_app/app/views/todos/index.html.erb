@@ -1,0 +1,12 @@
+
+<h1>All Todos <a href="/todos/new">(+)</a></h1>
+
+<ul>
+	<% @todos.each do |todo| %>
+		<li>
+			<a href="todos/<%= todo.id %>">
+				<%= todo.content %>
+			</a>
+		</li>
+	<% end %>
+</ul>
